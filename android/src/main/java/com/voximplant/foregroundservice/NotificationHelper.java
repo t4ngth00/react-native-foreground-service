@@ -127,6 +127,7 @@ class NotificationHelper {
         notificationBuilder.setContentTitle(notificationConfig.getString("title"))
                 .setContentText(notificationConfig.getString("text"))
                 .setPriority(priority)
+                .setOngoing(true)
                 .setContentIntent(pendingIntent);
 
         String color = notificationConfig.getString("color");
